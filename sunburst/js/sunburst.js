@@ -57,7 +57,7 @@ const svg = d3.select('#sunburst1')
     .on('click', () => focusOn()); // Reset zoom on canvas click
 
 /* d3.json('https://gist.githubusercontent.com/mbostock/4348373/raw/85f18ac90409caa5529b32156aa6e71cf985263f/flare.json', (error, root) => { */
-d3.json('https://jeanrosselvallee.github.io/doc/sunburst.json', (error, root) => {
+d3.json('https://jeanrosselvallee.github.io/DataViz/sunburst/doc/sunburst.json', (error, root) => {
     if (error) throw error;
 
     root = d3.hierarchy(root);
